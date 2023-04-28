@@ -6,17 +6,17 @@ default: &default
 development:
   <<: *default
   database: beauty_care_development
-  username: <%= ENV.fetch("DB_USERNAME") { 'nththam' } %>
-  password: <%= ENV.fetch("DB_PASSWORD") { 'HongTham' } %>
+  username: <%= ENV.fetch("DB_USERNAME") { 'root' } %>
+  password: <%= ENV.fetch("DB_PASSWORD") { 'Anh0712@' } %>
 
 test:
   <<: *default
   database: beauty_care_test
-  username: <%= ENV.fetch("DB_USERNAME") { 'nththam' } %>
-  password: <%= ENV.fetch("DB_PASSWORD") { 'HongTham' } %>
+  username: <%= ENV.fetch("DB_USERNAME") { 'root' } %>
+  password: <%= ENV.fetch("DB_PASSWORD") { 'Anh0712@' } %>
 
 production:
   <<: *default
   database: beauty_care_production
-  username: <%= ENV.fetch("DB_USERNAME") { 'nththam' } %>
-  password: <%= ENV.fetch("DB_PASSWORD") { 'HongTham' } %>
+  username: <%= ENV.fetch("DB_USERNAME") { 'root' } %>
+  password: <%= ENV.fetch("DB_PASSWORD") { 'Anh0712@' } %>

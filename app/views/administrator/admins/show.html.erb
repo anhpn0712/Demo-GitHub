@@ -1,0 +1,9 @@
+<h1>Admin Details</h1>
+
+<p><strong>First Name:</strong> <%= @admin.first_name %></p>
+<p><strong>Last Name:</strong> <%= @admin.last_name %></p>
+<p><strong>Email:</strong> <%= @admin.email %></p>
+<p><strong>Phone:</strong> <%= @admin.phone %></p>
+
+<p><%= link_to 'Edit', edit_administrator_admin_path(@admin) %></p>
+<p><%= link_to 'Back to List', administrator_admins_path %></p>

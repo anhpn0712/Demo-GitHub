@@ -40,7 +40,9 @@
               <a href="#">Ecommerce</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <% if defined?(current_admin) && current_admin.admin? %>
+                <%= link_to 'Admins', new_administrator_admin_path %>
+              <% end %>
             </li>
           </ul>
         </div>
@@ -51,6 +53,9 @@
         <i class="uil-calender"></i>
         <span> Calendar </span>
         </a>
+      </li>
+      <li class="side-nav-item">
+        <%= link_to "Admins", new_admin_session_path, class: "side-nav-link uil-comments-alt" %>
       </li>
       <li class="side-nav-item">
         <a href="#" class="side-nav-link">
